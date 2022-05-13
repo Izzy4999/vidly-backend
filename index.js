@@ -23,9 +23,8 @@ app.use("/api/returns", returns);
 
 const PORT = process.env.PORT || 3000;
 const db = process.env.DB_CONNECTION;
-console.log(db);
 mongoose.connect(db, () => {
-  console.log("db is connected", db);
+  console.log("db is connected");
 });
 
 app.listen(PORT, () => {
